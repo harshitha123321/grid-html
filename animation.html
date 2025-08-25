@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 500px;  
+            width: 700px;  
+            /* background-color:darkgoldenrod; */
+            background: linear-gradient(to right bottom,goldenrod,black);
+            border:solid black; 
+            margin-left: 280px;
+            margin-bottom: 500px; 
+            margin-top: 100px;  
+            z-index: 90; 
+            position: relative; 
+         }
+         .h1{
+            height:200px;
+            width:200px;
+            border-radius: 70%;
+            background-color:yellow;
+            z-index: 5; 
+            animation: blink-shadow 1s infinite alternate;  
+            box-shadow:10px 17px 10px goldenrod ;
+            position: absolute; 
+        }
+          body{ 
+              background-color: black;  
+            
+          } 
+          @keyframes blink-shadow{
+            0%{
+                box-shadow: 30px 10px gold;
+            }
+            100%{
+                 box-shadow:  0 -15px 10px 10px transparent;
+
+            } 
+         }
+    
+         
+    </style>
+</head>
+<body>
+    <div class="div">
+          <div class="h1"> 
+
+
+            </div>
+        </div>
+</div> 
+    
+</body>
+</html>
